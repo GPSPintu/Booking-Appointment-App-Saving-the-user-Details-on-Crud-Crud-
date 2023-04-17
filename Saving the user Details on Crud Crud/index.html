@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <center> <h1 style="color:#420adc">BOOKING APPOINTMENT CALL</h1></center>
+<fieldset><legend><h2 style="color:rgb(255, 0, 0)">BOOK A CALL</h2></legend>
+       <p  style="color:hsl(138, 100%, 3%)">Book a call slot and our representative will call you soon!!</p>
+
+    <hr>
+    <form clear onsubmit="saveToLocalStorage(event)" >
+<label >ENTER YOUR NAME: </label>
+<input type="text"id="username"  name="username" required><br><br>
+<label >ENTER PHONE NUMBER: </label>
+<input type="text" id="phn" name="phn" required><br><br>
+<label >ENTER YOUR AGE: </label>
+  <input type="number" id="Age" name="Age"><br><br>
+<label >ENTER YOUR ADDRESS: </label>
+<input type="text" id="addr" name="addr"><br><br>
+
+<button>BOOK NOW</button>
+</input>
+    </form> 
+</fieldset>
+<br>
+<fieldset><legend><h2 style="color:#ff0004">DATA FROM LOCAL STORAGE</h2></legend>
+<ul id="users"> 
+</ul>
+</fieldset>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
